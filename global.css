@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+img {
+  width: auto;
+  height: 100vh;
+  opacity: 0.5; /* Inicialmente semitransparente */
+  z-index: 2;
+}
+
+#controls {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn {
+  position: fixed;
+  top: 4px;
+  right: 4px;
+  z-index: 3;
+}
+
+input[type="range"],
+input[type="file"] {
+  margin: 10px 0;
+}

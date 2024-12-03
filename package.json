@@ -1,0 +1,7 @@
+{
+  "name": "drawing-cam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aurino Geraldo <aurinoaj@gmail.com>",
+  "license": "MIT"
+}
