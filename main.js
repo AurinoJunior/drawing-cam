@@ -1,7 +1,9 @@
 // Acessar a câmera
 const video = document.querySelector("video");
 navigator.mediaDevices
-  .getUserMedia({ video: true })
+  .getUserMedia({
+    video: { facingMode: "environment" }, // Força a câmera traseira
+  })
   .then((stream) => {
     video.srcObject = stream;
   })
